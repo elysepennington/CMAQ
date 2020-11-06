@@ -2217,14 +2217,30 @@
              RKI( NCELL,  924) =   4.0000D-11 * CFACT 
 !  Reaction Label POA_AGE10       
              RKI( NCELL,  925) =   4.0000D-11 * CFACT 
+!  Reaction Label IVOC_3          
+             RKI( NCELL,  926) =   2.1800D-11 * CFACT 
+!  Reaction Label IVOC_4          
+             RKI( NCELL,  927) =   2.0100D-11 * CFACT 
+!  Reaction Label IVOC_5          
+             RKI( NCELL,  928) =   1.7500D-11 * CFACT 
+!  Reaction Label IVOC_6          
+             RKI( NCELL,  929) =   2.5600D-11 * CFACT 
+!  Reaction Label IVOC_5ARO       
+             RKI( NCELL,  930) =   1.7500D-11 * CFACT 
+!  Reaction Label IVOC_6ARO       
+             RKI( NCELL,  931) =   2.5600D-11 * CFACT 
+!  Reaction Label ASILOX          
+             RKI( NCELL,  932) =   1.5500D-12 * CFACT 
+!  Reaction Label OIVOC           
+             RKI( NCELL,  933) =   2.8600D-11 * CFACT 
 !  Reaction Label HYD_MT          
-             RKI( NCELL,  926) =   9.2590D-05 * SFACT 
+             RKI( NCELL,  934) =   9.2590D-05 * SFACT 
 !  Reaction Label HYD_ISOP        
-             RKI( NCELL,  927) =   9.2590D-05 * SFACT 
+             RKI( NCELL,  935) =   9.2590D-05 * SFACT 
 !  Reaction Label HET_GLY         
-             RKI( NCELL,  928) =  BLKHET(  NCELL, IK_HETERO_GLY )
+             RKI( NCELL,  936) =  BLKHET(  NCELL, IK_HETERO_GLY )
 !  Reaction Label HET_MGLY        
-             RKI( NCELL,  929) =  BLKHET(  NCELL, IK_HETERO_MGLY )
+             RKI( NCELL,  937) =  BLKHET(  NCELL, IK_HETERO_MGLY )
 
         END DO  
 !  Multiply rate constants by [M], [O2], [N2], [H2O], [H2], or [CH4]
@@ -2720,6 +2736,17 @@
              INDEX_VSVOO2       = IOLD2NEW( INDEX_VSVOO2      , 1 )
              INDEX_VSVOO3       = IOLD2NEW( INDEX_VSVOO3      , 1 )
              INDEX_VSVOO1       = IOLD2NEW( INDEX_VSVOO1      , 1 )
+             INDEX_IVOCP3       = IOLD2NEW( INDEX_IVOCP3      , 1 )
+             INDEX_IVOCP4       = IOLD2NEW( INDEX_IVOCP4      , 1 )
+             INDEX_IVOCP5       = IOLD2NEW( INDEX_IVOCP5      , 1 )
+             INDEX_IVOCP6       = IOLD2NEW( INDEX_IVOCP6      , 1 )
+             INDEX_IVOCP5ARO    = IOLD2NEW( INDEX_IVOCP5ARO   , 1 )
+             INDEX_IVOCP6ARO    = IOLD2NEW( INDEX_IVOCP6ARO   , 1 )
+             INDEX_SILOX        = IOLD2NEW( INDEX_SILOX       , 1 )
+             INDEX_SVSILOX1     = IOLD2NEW( INDEX_SVSILOX1    , 1 )
+             INDEX_SVSILOX2     = IOLD2NEW( INDEX_SVSILOX2    , 1 )
+             INDEX_OIVOC        = IOLD2NEW( INDEX_OIVOC       , 1 )
+             INDEX_AOIVOCJ      = IOLD2NEW( INDEX_AOIVOCJ     , 1 )
              INDEX_AMTNO3J      = IOLD2NEW( INDEX_AMTNO3J     , 1 )
              INDEX_AMTHYDJ      = IOLD2NEW( INDEX_AMTHYDJ     , 1 )
              INDEX_AISOPNNJ     = IOLD2NEW( INDEX_AISOPNNJ    , 1 )

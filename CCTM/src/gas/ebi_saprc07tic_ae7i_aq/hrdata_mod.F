@@ -27,7 +27,7 @@ C  PRECONDITIONS: For the SAPRC07TIC_AE7I_AQ mechanism
 C
 C  KEY SUBROUTINES/FUNCTIONS CALLED: None
 C
-C  REVISION HISTORY: Created by EBI solver program, May 24, 2019
+C  REVISION HISTORY: Created by EBI solver program, Sep  6, 2020
 C
 C   18 Jul 14 B.Hutzell: revised to use real(8) variables for solution
 C*************************************************************************
@@ -330,9 +330,20 @@ c..Species indices
       INTEGER, PARAMETER :: VSVOO2           =  224
       INTEGER, PARAMETER :: VSVOO3           =  225
       INTEGER, PARAMETER :: VSVOO1           =  226
-      INTEGER, PARAMETER :: AMTNO3J          =  227
-      INTEGER, PARAMETER :: AMTHYDJ          =  228
-      INTEGER, PARAMETER :: AISOPNNJ         =  229
-      INTEGER, PARAMETER :: AGLYJ            =  230
+      INTEGER, PARAMETER :: IVOCP3           =  227
+      INTEGER, PARAMETER :: IVOCP4           =  228
+      INTEGER, PARAMETER :: IVOCP5           =  229
+      INTEGER, PARAMETER :: IVOCP6           =  230
+      INTEGER, PARAMETER :: IVOCP5ARO        =  231
+      INTEGER, PARAMETER :: IVOCP6ARO        =  232
+      INTEGER, PARAMETER :: SILOX            =  233
+      INTEGER, PARAMETER :: SVSILOX1         =  234
+      INTEGER, PARAMETER :: SVSILOX2         =  235
+      INTEGER, PARAMETER :: OIVOC            =  236
+      INTEGER, PARAMETER :: AOIVOCJ          =  237
+      INTEGER, PARAMETER :: AMTNO3J          =  238
+      INTEGER, PARAMETER :: AMTHYDJ          =  239
+      INTEGER, PARAMETER :: AISOPNNJ         =  240
+      INTEGER, PARAMETER :: AGLYJ            =  241
 
       END MODULE HRDATA

@@ -29,7 +29,7 @@ C  RETURN VALUES: None
 C
 C  KEY SUBROUTINES/FUNCTIONS CALLED: None
 C
-C  REVISION HISTORY: Created by EBI solver program, May 24, 2019
+C  REVISION HISTORY: Created by EBI solver program, Sep  6, 2020
 C   21 Jun 10 J.Young:   convert for Namelist redesign
 C   18 Jul 14 B.Hutzell: revised to use the RXNS_DATA and RXNS_FUNCTION
 C                        modules instead of include files
@@ -140,7 +140,7 @@ C***********************************************************************
 
 c..Allocate and define ebi species
 
-      N_EBISP  = 217
+      N_EBISP  = 228
       ALLOCATE( EBISP( N_EBISP ), STAT = IOS ) 
       IF ( IOS .NE. 0 ) THEN
          MSG = 'Error allocating EBISP' 
@@ -360,10 +360,21 @@ c..Allocate and define ebi species
       EBISP( 211 ) = VSVOO2
       EBISP( 212 ) = VSVOO3
       EBISP( 213 ) = VSVOO1
-      EBISP( 214 ) = AMTNO3J
-      EBISP( 215 ) = AMTHYDJ
-      EBISP( 216 ) = AISOPNNJ
-      EBISP( 217 ) = AGLYJ
+      EBISP( 214 ) = IVOCP3
+      EBISP( 215 ) = IVOCP4
+      EBISP( 216 ) = IVOCP5
+      EBISP( 217 ) = IVOCP6
+      EBISP( 218 ) = IVOCP5ARO
+      EBISP( 219 ) = IVOCP6ARO
+      EBISP( 220 ) = SILOX
+      EBISP( 221 ) = SVSILOX1
+      EBISP( 222 ) = SVSILOX2
+      EBISP( 223 ) = OIVOC
+      EBISP( 224 ) = AOIVOCJ
+      EBISP( 225 ) = AMTNO3J
+      EBISP( 226 ) = AMTHYDJ
+      EBISP( 227 ) = AISOPNNJ
+      EBISP( 228 ) = AGLYJ
 
 
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
@@ -595,6 +606,17 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
       RTOL( VSVOO2       ) = 5.0D-04
       RTOL( VSVOO3       ) = 5.0D-04
       RTOL( VSVOO1       ) = 5.0D-04
+      RTOL( IVOCP3       ) = 5.0D-04
+      RTOL( IVOCP4       ) = 5.0D-04
+      RTOL( IVOCP5       ) = 5.0D-04
+      RTOL( IVOCP6       ) = 5.0D-04
+      RTOL( IVOCP5ARO    ) = 5.0D-04
+      RTOL( IVOCP6ARO    ) = 5.0D-04
+      RTOL( SILOX        ) = 5.0D-04
+      RTOL( SVSILOX1     ) = 5.0D-04
+      RTOL( SVSILOX2     ) = 5.0D-04
+      RTOL( OIVOC        ) = 5.0D-04
+      RTOL( AOIVOCJ      ) = 5.0D-04
       RTOL( AMTNO3J      ) = 5.0D-04
       RTOL( AMTHYDJ      ) = 5.0D-04
       RTOL( AISOPNNJ     ) = 5.0D-04
