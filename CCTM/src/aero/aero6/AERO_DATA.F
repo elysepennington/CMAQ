@@ -125,7 +125,7 @@ C----------------------------------------------------------------------
 
 C Number of aerosol species and modes
 
-      Integer, Parameter :: n_aerolist = 110    ! number of aero species
+      Integer, Parameter :: n_aerolist = 113    ! number of aero species
       Integer, Parameter :: n_mode = 3          ! number of modes:
                                                 ! 1 = Aitken
                                                 ! 2 = accumulation
@@ -293,6 +293,11 @@ C                     ---------- -------- ------- + +   + ------ --- +  --------
      & spcs_list_type('AAVB2   ', cm_set, 1400.0, T,F,  0,  2.8, 6.1,T, 'DUST  ', 0.15),
      & spcs_list_type('AAVB3   ', cm_set, 1400.0, T,F,  0,  2.8, 6.1,T, 'DUST  ', 0.14),
      & spcs_list_type('AAVB4   ', cm_set, 1400.0, T,F,  0,  2.8, 6.1,T, 'DUST  ', 0.12),
+
+       ! Siloxanes and oxygenated IVOCs
+     & spcs_list_type('AOIVOC  ', cm_set, 1400.0, F,F,  0,  2.8, 6.1,T, 'DUST  ', 0.07), !
+     & spcs_list_type('ASILOX1 ', cm_set, 1400.0, T,F,  0,  2.8, 6.1,T, 'DUST  ', 0.09),
+     & spcs_list_type('ASILOX2 ', cm_set, 1400.0, T,F,  0,  2.8, 6.1,T, 'DUST  ', 0.05),
 
        ! The following species are associated with the Multi-Pollutant code
      & spcs_list_type('ANI     ', cm_set, 2200.0, F,T,  0,  0.0, 0.0,F, 'DUST  ', 0.00), ! Nickel

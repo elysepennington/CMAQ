@@ -75,7 +75,7 @@ C-----------------------------------------------------------------------
       Logical, Parameter, Private :: T = .true.
       Logical, Parameter, Private :: F = .false.
 
-      Integer, Parameter :: n_oa_list = 56   ! # of potential partitioning SVOCs
+      Integer, Parameter :: n_oa_list = 59   ! # of potential partitioning SVOCs
       Integer, Save      :: n_oa             ! # of actual simulated SOA vapors
 
       Type oa_type
@@ -150,7 +150,10 @@ C-----------------------------------------------------------------------
      & oa_type('AAVB3  ', 'SVAVB3  ', '        ',  0.0000,   10.000,  18.0E3,   F ),
      & oa_type('AAVB4  ', 'SVAVB4  ', '        ',  0.0000,  100.000,  18.0E3,   F ),
      & oa_type('AOLGA  ', '        ', '        ',  0.0000,   1.e-10,   1.0E0,   T ),
-     & oa_type('AOLGB  ', '        ', '        ',  0.0000,   1.e-10,   1.0E0,   T ) /)
+     & oa_type('AOLGB  ', '        ', '        ',  0.0000,   1.e-10,   1.0E0,   T ),
+     & oa_type('ASILOX1', 'SVSILOX1', '        ',  0.0000,     0.95, 131.0E3,   F ),
+     & oa_type('ASILOX2', 'SVSILOX2', '        ',  0.0000,  484.000, 101.0E3,   F ),     
+     & oa_type('AOIVOC ', '        ', '        ',     0.0,   1.E-10,   1.0E0,   T ) /)
       ! Table Comments:
       ! *Reaction Counters are only needed if the vapor species is not formed
       !  directly in the gas-phase chemistry mechanism.

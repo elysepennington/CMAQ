@@ -1726,6 +1726,34 @@ REACTIONS [CM] =
       + 0.0640 * VSVOO1 + 0.0385 * VSVOO2
       + 0.2667 * VSVOO3                   #4.0e-11;         
 
+<IVOC_3> IVOCP3 + OH = OH
+      + 0.1461 * VLVOO2 + 0.1889 * VSVOO1
+      + 1.1951 * VSVOO2 + 0.4382 * VSVOO3   #2.18e-11;
+
+<IVOC_4> IVOCP4 + OH = OH
+      + 0.1272 * VLVOO2 + 0.1565 * VSVOO1
+      + 0.9859 * VSVOO2 + 0.4539 * VSVOO3   #2.01e-11;
+
+<IVOC_5> IVOCP5 + OH = OH
+      + 0.0823 * VLVOO2 + 0.0991 * VSVOO1
+      + 0.6404 * VSVOO2 + 0.8089 * VSVOO3   #1.75e-11;
+
+<IVOC_6> IVOCP6 + OH = OH
+      + 0.0122 * VLVOO2 + 0.0615 * VSVOO1
+      + 0.1611 * VSVOO2 + 0.6466 * VSVOO3   #2.56e-11;
+
+<IVOC_5ARO> IVOCP5ARO + OH = OH
+      + 0.2074 * VLVOO2 + 0.0307 * VSVOO1
+      + 0.4808 * VSVOO2 + 0.5271 * VSVOO3   #1.75e-11;
+
+<IVOC_6ARO> IVOCP6ARO + OH = OH
+      + 0.0262 * VLVOO2 + 0.1310 * VSVOO1
+      + 0.3017 * VSVOO2 + 0.0061 * VSVOO3   #2.56e-11;
+
+! Siloxanes and oxygenated IVOCs
+<ASILOX> SILOX + OH = OH + 0.14 * SVSILOX1 + 0.82 * SVSILOX2 #1.55E-12; 
+<OIVOC> OIVOC + OH = OH + 0.0303 * AOIVOCJ #2.86E-11;
+
 ! Hydrolysis of particle-phase nitrates
 
 <HYD_MT>   AMTNO3J  = HNO3 + 1.00*AMTHYDJ #9.259E-5;
