@@ -29,7 +29,7 @@ C  RETURN VALUES: None
 C
 C  KEY SUBROUTINES/FUNCTIONS CALLED: None
 C
-C  REVISION HISTORY: Created by EBI solver program, Sep  6, 2020
+C  REVISION HISTORY: Created by EBI solver program, Dec 11, 2020
 C
 C   18 Jul 14 B.Hutzell: revised to use real(8) variables
 
@@ -4024,10 +4024,10 @@ C***********************************************************************
       PROD(  SVSILOX2     ) =    8.2000D-01 * RXRAT(   932 )      ! SILOX+OH=0.8200D+...
       LOSS(  SVSILOX2     ) =   0.0D0
 
-      PROD(  OIVOC        ) =   0.0D0
-      LOSS(  OIVOC        ) =                 RXRAT(   933 )      ! OIVOC+OH=OH+0.3030D-01*AOIVOCJ
+      PROD(  SOAOXY       ) =   0.0D0
+      LOSS(  SOAOXY       ) =                 RXRAT(   933 )      ! SOAOXY+OH=OH+0.6280D-...
 
-      PROD(  AOIVOCJ      ) =    3.0300D-02 * RXRAT(   933 )      ! OIVOC+OH=0.3030D-01*AOIVOCJ+OH
+      PROD(  AOIVOCJ      ) =    6.2800D-02 * RXRAT(   933 )      ! SOAOXY+OH=0.6280D-...
       LOSS(  AOIVOCJ      ) =   0.0D0
 
       PROD(  AMTNO3J      ) =   0.0D0

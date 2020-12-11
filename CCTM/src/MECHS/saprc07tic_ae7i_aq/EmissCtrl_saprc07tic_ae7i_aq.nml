@@ -174,6 +174,14 @@
    'EVERYWHERE', 'ALL'         ,'HCHO'   ,'HCHO_PRIMARY','GAS'  ,1.  ,'UNIT','a', 
    'EVERYWHERE', 'ALL'         ,'CCHO'   ,'CCHO_PRIMARY','GAS'  ,1.  ,'UNIT','a', 
    'EVERYWHERE', 'ALL'         ,'ACRO'   ,'ACRO_PRIMARY','GAS'  ,1.  ,'UNIT','a', 
+   'EVERYWHERE', 'ALL'         ,'IVOCP3' ,'IVOCP3'      ,'GAS'  ,1.  ,'UNIT','a',
+   'EVERYWHERE', 'ALL'         ,'IVOCP4' ,'IVOCP4'      ,'GAS'  ,1.  ,'UNIT','a',
+   'EVERYWHERE', 'ALL'         ,'IVOCP5' ,'IVOCP5'      ,'GAS'  ,1.  ,'UNIT','a',
+   'EVERYWHERE', 'ALL'         ,'IVOCP6' ,'IVOCP6'      ,'GAS'  ,1.  ,'UNIT','a',
+   'EVERYWHERE', 'ALL'         ,'IVOCP5ARO','IVOCP5ARO' ,'GAS'  ,1.  ,'UNIT','a',
+   'EVERYWHERE', 'ALL'         ,'IVOCP6ARO','IVOCP6ARO' ,'GAS'  ,1.  ,'UNIT','a',
+   'EVERYWHERE', 'ALL'         ,'SILOX'  ,'SILOX'       ,'GAS'  ,1.  ,'UNIT','a',
+   'EVERYWHERE', 'ALL'         ,'SOAOXY' ,'SOAOXY'      ,'GAS'  ,1.  ,'UNIT','a',
 
    ! Default Aerosols
    'EVERYWHERE', 'ALL'         ,'SULF'   ,'ASO4'        ,'FINE' ,1.  ,'MASS','a', 
@@ -275,39 +283,6 @@
     'EVERYWHERE', 'PT_FIRES_MXCA','ALL'   ,'PCVOC'      ,'GAS' ,0.0  ,'MASS','o', 
     'EVERYWHERE', 'GR_RES_FIRES' ,'ALL'   ,'PCVOC'      ,'GAS' ,0.0  ,'MASS','o', 
   
-   ! Siloxanes and other oxygenated and nonoxygenated IVOCs
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'SILOX'      ,'GAS' ,0.006,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'OIVOC'      ,'GAS' ,0.026,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'IVOCP3'     ,'GAS' ,0.0008,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'IVOCP4'     ,'GAS' ,0.0005,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'IVOCP5'     ,'GAS' ,0.0087,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'IVOCP6'     ,'GAS' ,0.0072,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'IVOCP5ARO'  ,'GAS' ,0.0001,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'IVOCP6ARO'  ,'GAS' ,0.0006,'MASS','a',
-
-   ! Add VCP mass to existing CMAQ surrogates
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ARO1'       ,'GAS' ,0.001,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ALK5'       ,'GAS' ,0.0197,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ARO2MN'     ,'GAS' ,0.002,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'OLE2'       ,'GAS' ,0.0005,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'TERP'       ,'GAS' ,0.0009,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'OLE1'       ,'GAS' ,0.0008,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'TMBENZ124'  ,'GAS' ,0.0003,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ALK4'       ,'GAS' ,0.0126,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ALK3'       ,'GAS' ,0.009,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ALK2'       ,'GAS' ,0.0068,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'PRD2'       ,'GAS' ,0.0009,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'MEK'        ,'GAS' ,0.0022,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ALK1'       ,'GAS' ,0.0029,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ACETONE'    ,'GAS' ,0.0133,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'MEOH'       ,'GAS' ,0.0021,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'TOLUENE'    ,'GAS' ,0.0059,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'BENZENE'    ,'GAS' ,0.0003,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'ETOH'       ,'GAS' ,0.0268,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'MXYL'       ,'GAS' ,0.0016,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'OXYL'       ,'GAS' ,0.0001,'MASS','a',
-    'EVERYWHERE', 'ALL'          ,'CO'    ,'PXYL'       ,'GAS' ,0.0015,'MASS','a',
-
    ! Following Momei, reduce mobile NOx by 25%
    'EVERYWHERE', 'GR_GAS'      ,'NO2'    ,'NO2'         ,'GAS'  ,0.75  ,'UNIT','m',
    'EVERYWHERE', 'GR_GAS'      ,'NO'     ,'NO'          ,'GAS'  ,0.75  ,'UNIT','m',
@@ -318,7 +293,6 @@
    'EVERYWHERE', 'GR_AIRCRAFT' ,'NO2'    ,'NO2'         ,'GAS'  ,0.75  ,'UNIT','m',
    'EVERYWHERE', 'GR_AIRCRAFT' ,'NO'     ,'NO'          ,'GAS'  ,0.75  ,'UNIT','m',
    'EVERYWHERE', 'GR_AIRCRAFT' ,'HONO'   ,'HONO'        ,'GAS'  ,0.75  ,'UNIT','m',
-
  
    ! Wind-Blown Dust and Sea Spray Scaling
    ! Fine Components

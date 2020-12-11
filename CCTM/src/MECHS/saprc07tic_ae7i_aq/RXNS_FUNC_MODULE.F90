@@ -2218,21 +2218,21 @@
 !  Reaction Label POA_AGE10       
              RKI( NCELL,  925) =   4.0000D-11 * CFACT 
 !  Reaction Label IVOC_3          
-             RKI( NCELL,  926) =   2.1800D-11 * CFACT 
+             RKI( NCELL,  926) =   2.6500D-11 * CFACT 
 !  Reaction Label IVOC_4          
-             RKI( NCELL,  927) =   2.0100D-11 * CFACT 
+             RKI( NCELL,  927) =   2.2500D-11 * CFACT 
 !  Reaction Label IVOC_5          
-             RKI( NCELL,  928) =   1.7500D-11 * CFACT 
+             RKI( NCELL,  928) =   1.8900D-11 * CFACT 
 !  Reaction Label IVOC_6          
-             RKI( NCELL,  929) =   2.5600D-11 * CFACT 
+             RKI( NCELL,  929) =   1.5500D-11 * CFACT 
 !  Reaction Label IVOC_5ARO       
-             RKI( NCELL,  930) =   1.7500D-11 * CFACT 
+             RKI( NCELL,  930) =   7.5600D-11 * CFACT 
 !  Reaction Label IVOC_6ARO       
-             RKI( NCELL,  931) =   2.5600D-11 * CFACT 
+             RKI( NCELL,  931) =   3.0500D-11 * CFACT 
 !  Reaction Label ASILOX          
              RKI( NCELL,  932) =   1.5500D-12 * CFACT 
 !  Reaction Label OIVOC           
-             RKI( NCELL,  933) =   2.8600D-11 * CFACT 
+             RKI( NCELL,  933) =   2.5400D-11 * CFACT 
 !  Reaction Label HYD_MT          
              RKI( NCELL,  934) =   9.2590D-05 * SFACT 
 !  Reaction Label HYD_ISOP        
@@ -2745,7 +2745,7 @@
              INDEX_SILOX        = IOLD2NEW( INDEX_SILOX       , 1 )
              INDEX_SVSILOX1     = IOLD2NEW( INDEX_SVSILOX1    , 1 )
              INDEX_SVSILOX2     = IOLD2NEW( INDEX_SVSILOX2    , 1 )
-             INDEX_OIVOC        = IOLD2NEW( INDEX_OIVOC       , 1 )
+             INDEX_SOAOXY       = IOLD2NEW( INDEX_SOAOXY      , 1 )
              INDEX_AOIVOCJ      = IOLD2NEW( INDEX_AOIVOCJ     , 1 )
              INDEX_AMTNO3J      = IOLD2NEW( INDEX_AMTNO3J     , 1 )
              INDEX_AMTHYDJ      = IOLD2NEW( INDEX_AMTHYDJ     , 1 )

@@ -397,8 +397,8 @@ C...  Atmospheric Chemistry and Physics, 1997
       DATA SUBNAME(216), A(216), E(216) / 'CLO             ', 7.00E-03, 0.0E+00 /   ! Sander et al., ACP, 2015
       DATA SUBNAME(217), A(217), E(217) / 'SILOX           ', 3.87E+02,  6.0E+03 /   ! est based on Hodzic 2014 GRL
       DATA SUBNAME(218), A(218), E(218) / 'SVSILOX1        ', 2.97E+06,  6.0E+03 /   ! est based on Hodzic 2014 GRL
-      DATA SUBNAME(219), A(219), E(219) / 'SVSILOX2        ', 7.99E+05,  6.0E+03 /   ! est based on Hodzic 2014 GRL
-      DATA SUBNAME(220), A(220), E(220) / 'OIVOC           ', 2.22E+03,  6.0E+03 /   ! est based on Hodzic 2014 GRL
+      DATA SUBNAME(219), A(219), E(219) / 'SVSILOX2        ', 7.99E+04,  6.0E+03 /   ! est based on Hodzic 2014 GRL
+      DATA SUBNAME(220), A(220), E(220) / 'SOAOXY          ', 2.85E+03,  6.0E+03 /   ! est based on Hodzic 2014 GRL
 
       DATA B( LSO2   ), D( LSO2   ) / 1.30E-02,  1.96E+03 /  ! SO2*H2O<=>HSO3+H     : Smith and Martell (1976)
       DATA B( LHSO3  ), D( LHSO3  ) / 6.60E-08,  1.50E+03 /  ! HSO3<=>SO3+H         : Smith and Martell (1976)

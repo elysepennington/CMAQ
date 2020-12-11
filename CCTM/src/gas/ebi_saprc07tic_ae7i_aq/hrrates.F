@@ -27,7 +27,7 @@ C  PRECONDITIONS: For the SAPRC07TIC_AE7I_AQ mechanism
 C
 C  KEY SUBROUTINES/FUNCTIONS CALLED: None
 C
-C  REVISION HISTORY: Created by EBI solver program, Sep  6, 2020
+C  REVISION HISTORY: Created by EBI solver program, Dec 11, 2020
 C
 C***********************************************************************
       USE HRDATA
@@ -986,7 +986,7 @@ C..NOTE: RXRAT commented out are not referenced by any routine
       RXRAT(    930 ) = RKI(   930 ) * YC(  IVOCP5ARO ) * YC(  OH )
       RXRAT(    931 ) = RKI(   931 ) * YC(  IVOCP6ARO ) * YC(  OH )
       RXRAT(    932 ) = RKI(   932 ) * YC(  SILOX ) * YC(  OH )
-      RXRAT(    933 ) = RKI(   933 ) * YC(  OIVOC ) * YC(  OH )
+      RXRAT(    933 ) = RKI(   933 ) * YC(  SOAOXY ) * YC(  OH )
       RXRAT(    934 ) = RKI(   934 ) * YC(  AMTNO3J )
       RXRAT(    935 ) = RKI(   935 ) * YC(  AISOPNNJ )
       RXRAT(    936 ) = RKI(   936 ) * YC(  GLY )

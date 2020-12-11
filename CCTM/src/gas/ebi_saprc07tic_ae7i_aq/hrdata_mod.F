@@ -27,7 +27,7 @@ C  PRECONDITIONS: For the SAPRC07TIC_AE7I_AQ mechanism
 C
 C  KEY SUBROUTINES/FUNCTIONS CALLED: None
 C
-C  REVISION HISTORY: Created by EBI solver program, Sep  6, 2020
+C  REVISION HISTORY: Created by EBI solver program, Dec 11, 2020
 C
 C   18 Jul 14 B.Hutzell: revised to use real(8) variables for solution
 C*************************************************************************
@@ -339,7 +339,7 @@ c..Species indices
       INTEGER, PARAMETER :: SILOX            =  233
       INTEGER, PARAMETER :: SVSILOX1         =  234
       INTEGER, PARAMETER :: SVSILOX2         =  235
-      INTEGER, PARAMETER :: OIVOC            =  236
+      INTEGER, PARAMETER :: SOAOXY           =  236
       INTEGER, PARAMETER :: AOIVOCJ          =  237
       INTEGER, PARAMETER :: AMTNO3J          =  238
       INTEGER, PARAMETER :: AMTHYDJ          =  239

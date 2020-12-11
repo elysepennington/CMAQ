@@ -89,7 +89,7 @@ TOL             ,ppbV      ,1000.0*TOLUENE[1]
 XYL             ,ppbV      ,1000.0*(MXYL[1]+OXYL[1]+PXYL[1]) 
 ALK             ,ppbC      ,1000.*(2.*ALK1[1]+3.*ALK2[1]+4.*ALK3[1]+5.*ALK4[1]+8.*ALK5[1])
 SILOX           ,ppbV      ,1000.*SILOX[1]
-OIVOC           ,ppbV      ,1000.*OIVOC[1]
+SOAOXY          ,ppbV      ,1000.*SOAOXY[1]
 nonoxIVOC       ,ppbV      ,1000.*(IVOCP3[1]+IVOCP4[1]+IVOCP5[1]+IVOCP6[1]+IVOCP5ARO[1]+IVOCP6ARO[1])
 
 !! Unused Gases. Presented Here for illustration. Users can uncomment

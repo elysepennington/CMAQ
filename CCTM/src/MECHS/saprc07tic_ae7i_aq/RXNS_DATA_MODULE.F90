@@ -6,7 +6,7 @@
 
 
 ! --------- Photochemical Mechanism Reactions, Rates, etc. DAT ---------
-! Source file: /home/epenni01/CMAQ_REPO_v532/CCTM/src/MECHS/saprc07tic_ae7i_aq/mech_saprc07tic_ae7i_aq.def
+! Source file: /nobackupp11/epenning/CMAQ_REPO_v532/CCTM/src/MECHS/saprc07tic_ae7i_aq/mech_saprc07tic_ae7i_aq.def
 ! for Mechanism Name: SAPRC07TIC_AE7I_AQ              
 
 ! This file is used to create mechanism data and functions
@@ -316,7 +316,7 @@
       DATA GAS_CHEM_SPC( 212 ) / 'SILOX           ' /
       DATA GAS_CHEM_SPC( 213 ) / 'SVSILOX1        ' /
       DATA GAS_CHEM_SPC( 214 ) / 'SVSILOX2        ' /
-      DATA GAS_CHEM_SPC( 215 ) / 'OIVOC           ' /
+      DATA GAS_CHEM_SPC( 215 ) / 'SOAOXY          ' /
 
 
 
@@ -573,16 +573,16 @@
       & MEMBER("VSVOO3          ",  199, "GC",  134.00D0, F), &
       & MEMBER("VSVOO1          ",  197, "GC",  135.00D0, F), &
       & MEMBER("IVOCP3          ",  206, "GC",  296.60D0, F), &
-      & MEMBER("IVOCP4          ",  207, "GC",  254.50D0, F), &
+      & MEMBER("IVOCP4          ",  207, "GC",  254.90D0, F), &
       & MEMBER("IVOCP5          ",  208, "GC",  219.40D0, F), &
       & MEMBER("IVOCP6          ",  209, "GC",  184.40D0, F), &
       & MEMBER("IVOCP5ARO       ",  210, "GC",  197.30D0, F), &
       & MEMBER("IVOCP6ARO       ",  211, "GC",  162.30D0, F), &
       & MEMBER("SILOX           ",  215, "GC",  368.66D0, F), &
       & MEMBER("SVSILOX1        ",  213, "GC",  416.66D0, F), &
-      & MEMBER("SVSILOX2        ",  214, "GC",  382.66D0, F), &
-      & MEMBER("OIVOC           ",  212, "GC",  119.54D0, F), &
-      & MEMBER("AOIVOCJ         ",  307, "AE",  135.54D0, T), &
+      & MEMBER("SVSILOX2        ",  214, "GC",  384.66D0, F), &
+      & MEMBER("SOAOXY          ",  212, "GC",  170.95D0, F), &
+      & MEMBER("AOIVOCJ         ",  307, "AE",  186.95D0, T), &
       & MEMBER("AMTNO3J         ",  223, "AE",  231.00D0, T), &
       & MEMBER("AMTHYDJ         ",  268, "AE",  186.00D0, T), &
       & MEMBER("AISOPNNJ        ",  227, "AE",  226.00D0, T), &
@@ -815,16 +815,16 @@
       DATA CHEMISTRY_SPC( 225 ), SPECIES_MOLWT( 225 ) / 'VSVOO3          ',  134.00D0 /
       DATA CHEMISTRY_SPC( 226 ), SPECIES_MOLWT( 226 ) / 'VSVOO1          ',  135.00D0 /
       DATA CHEMISTRY_SPC( 227 ), SPECIES_MOLWT( 227 ) / 'IVOCP3          ',  296.60D0 /
-      DATA CHEMISTRY_SPC( 228 ), SPECIES_MOLWT( 228 ) / 'IVOCP4          ',  254.50D0 /
+      DATA CHEMISTRY_SPC( 228 ), SPECIES_MOLWT( 228 ) / 'IVOCP4          ',  254.90D0 /
       DATA CHEMISTRY_SPC( 229 ), SPECIES_MOLWT( 229 ) / 'IVOCP5          ',  219.40D0 /
       DATA CHEMISTRY_SPC( 230 ), SPECIES_MOLWT( 230 ) / 'IVOCP6          ',  184.40D0 /
       DATA CHEMISTRY_SPC( 231 ), SPECIES_MOLWT( 231 ) / 'IVOCP5ARO       ',  197.30D0 /
       DATA CHEMISTRY_SPC( 232 ), SPECIES_MOLWT( 232 ) / 'IVOCP6ARO       ',  162.30D0 /
       DATA CHEMISTRY_SPC( 233 ), SPECIES_MOLWT( 233 ) / 'SILOX           ',  368.66D0 /
       DATA CHEMISTRY_SPC( 234 ), SPECIES_MOLWT( 234 ) / 'SVSILOX1        ',  416.66D0 /
-      DATA CHEMISTRY_SPC( 235 ), SPECIES_MOLWT( 235 ) / 'SVSILOX2        ',  382.66D0 /
-      DATA CHEMISTRY_SPC( 236 ), SPECIES_MOLWT( 236 ) / 'OIVOC           ',  119.54D0 /
-      DATA CHEMISTRY_SPC( 237 ), SPECIES_MOLWT( 237 ) / 'AOIVOCJ         ',  135.54D0 /
+      DATA CHEMISTRY_SPC( 235 ), SPECIES_MOLWT( 235 ) / 'SVSILOX2        ',  384.66D0 /
+      DATA CHEMISTRY_SPC( 236 ), SPECIES_MOLWT( 236 ) / 'SOAOXY          ',  170.95D0 /
+      DATA CHEMISTRY_SPC( 237 ), SPECIES_MOLWT( 237 ) / 'AOIVOCJ         ',  186.95D0 /
       DATA CHEMISTRY_SPC( 238 ), SPECIES_MOLWT( 238 ) / 'AMTNO3J         ',  231.00D0 /
       DATA CHEMISTRY_SPC( 239 ), SPECIES_MOLWT( 239 ) / 'AMTHYDJ         ',  186.00D0 /
       DATA CHEMISTRY_SPC( 240 ), SPECIES_MOLWT( 240 ) / 'AISOPNNJ        ',  226.00D0 /
@@ -1066,7 +1066,7 @@
       DATA CGRID_INDEX( 233 ), SPECIES_TYPE( 233 ), CONVERT_CONC( 233 ) /  215, 'GC', F /  ! SILOX
       DATA CGRID_INDEX( 234 ), SPECIES_TYPE( 234 ), CONVERT_CONC( 234 ) /  213, 'GC', F /  ! SVSILOX1
       DATA CGRID_INDEX( 235 ), SPECIES_TYPE( 235 ), CONVERT_CONC( 235 ) /  214, 'GC', F /  ! SVSILOX2
-      DATA CGRID_INDEX( 236 ), SPECIES_TYPE( 236 ), CONVERT_CONC( 236 ) /  212, 'GC', F /  ! OIVOC
+      DATA CGRID_INDEX( 236 ), SPECIES_TYPE( 236 ), CONVERT_CONC( 236 ) /  212, 'GC', F /  ! SOAOXY
       DATA CGRID_INDEX( 237 ), SPECIES_TYPE( 237 ), CONVERT_CONC( 237 ) /  307, 'AE', T /  ! AOIVOCJ
       DATA CGRID_INDEX( 238 ), SPECIES_TYPE( 238 ), CONVERT_CONC( 238 ) /  223, 'AE', T /  ! AMTNO3J
       DATA CGRID_INDEX( 239 ), SPECIES_TYPE( 239 ), CONVERT_CONC( 239 ) /  268, 'AE', T /  ! AMTHYDJ
@@ -1311,7 +1311,7 @@
       INTEGER :: INDEX_SILOX        =  233
       INTEGER :: INDEX_SVSILOX1     =  234
       INTEGER :: INDEX_SVSILOX2     =  235
-      INTEGER :: INDEX_OIVOC        =  236
+      INTEGER :: INDEX_SOAOXY       =  236
       INTEGER :: INDEX_AOIVOCJ      =  237
       INTEGER :: INDEX_AMTNO3J      =  238
       INTEGER :: INDEX_AMTHYDJ      =  239
@@ -4828,8 +4828,8 @@
      &     2.5000D-12, 1.0000D+00, 2.5000D-12, 1.0000D+00, 1.2500D-11, & ! 1   
      &     4.0000D-11, 4.0000D-11, 4.0000D-11, 4.0000D-11, 4.0000D-11, & ! +   
      &     4.0000D-11, 4.0000D-11, 4.0000D-11, 4.0000D-11, 4.0000D-11, & ! 2   
-     &     2.1800D-11, 2.0100D-11, 1.7500D-11, 2.5600D-11, 1.7500D-11, & ! +   
-     &     2.5600D-11, 1.5500D-12, 2.8600D-11, 9.2590D-05, 9.2590D-05, & ! 3   
+     &     2.6500D-11, 2.2500D-11, 1.8900D-11, 1.5500D-11, 7.5600D-11, & ! +   
+     &     3.0500D-11, 1.5500D-12, 2.5400D-11, 9.2590D-05, 9.2590D-05, & ! 3   
      &     1.0000D+00, 1.0000D+00/           !        +   
 
       DATA ( RTDAT( 2,IRXXN ), IRXXN = 1, NRXNS ) / & 
@@ -5632,7 +5632,7 @@
      &     4.8570D-01, 3.0030D-01, 3.8560D-01, 2.1810D-01, 2.4120D-01, & ! +   
      &     6.6640D-01, 2.8580D-01, 3.3030D-01, 3.4440D-01, 3.8860D-01, & ! 2   
      &     1.4610D-01, 1.2720D-01, 8.2300D-02, 1.2200D-02, 2.0740D-01, & ! +   
-     &     2.6200D-02, 1.4000D-01, 3.0300D-02, 1.0000D+00, 5.0000D-01, & ! 3   
+     &     2.6200D-02, 1.4000D-01, 6.2800D-02, 1.0000D+00, 5.0000D-01, & ! 3   
      &     0.0000D+00, 0.0000D+00/           !        +   
 
       DATA ( SC( IRXXN,  3 ), IRXXN = 1, NRXNS ) / & 
